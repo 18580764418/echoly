@@ -1,0 +1,10 @@
+version: '3'
+services:
+  x11vnc:
+    image: 'x11vnc:0.0.1'
+    container_name: 'x11vnc'
+    privileged: true
+    user: 'l'
+    tty: true
+    ports:
+    - '5902:5903'
